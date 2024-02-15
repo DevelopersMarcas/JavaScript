@@ -1,0 +1,64 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+form {
+  width: max-width;
+  border: 1px solid green;
+  border-radius: 5px;
+}
+h1 {
+  margin: 10px;
+  padding: 5px;
+  color: #0c8f1b;
+}
+section {
+  width: 50%;
+  margin: auto;
+}
+div {
+  padding: 5px;
+  margin: 10px;
+}
+label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+input,
+select {
+  border-radius: 2px;
+  border: 1px solid;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 6px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+button {
+  color: white;
+  border-color: #0c8f1b;
+  border-radius: 5px;
+  background-color: #0c8f1b;
+  width: 100%;
+  padding: 6px;
+}
+#error {
+  display: none;
+  color: rgb(237, 68, 68);
+}
+#errorPswd {
+  display: none;
+  color: rgb(237, 68, 68);
+}
+#hidden {
+  display: none;
+}
+#hidden > input {
+  border: 2px solid red;
+}

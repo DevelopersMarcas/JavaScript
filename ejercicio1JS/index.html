@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio1</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="center">
+      <h1>Empezando con Javascript</h1>
+    </div>
+    <div id="color" class="cont-text1">
+      <p id="textoVacio">TEXTO DEL DIV</p>
+    </div>
+    <hr />
+    <div class="center">
+      <label for="texto">Introduce un texto aquí</label>
+      <input type="text" name="texto" id="texto" />
+    </div>
+    <hr />
+    <div class="center">
+      <label for="colorFondo">Selecciona color de fondo</label>
+      <input type="color" name="colorFondo" id="colorFondo" />
+      <label for="colorBorde">Selecciona color del borde</label>
+      <input type="color" name="colorBorde" id="colorBorde" />
+      <label for="colorTexto">Selecciona color del texto</label>
+      <input type="color" name="colorTexto" id="colorTexto" />
+    </div>
+    <hr />
+    <div class="center">
+      <input type="button" onclick="cambiarTexto()" value="cambiar texto" />
+      <input
+        type="button"
+        onclick="cambiarColorFondo()"
+        value="cambiar color fondo"
+      />
+      <input
+        type="button"
+        onclick="cambiarColorBorde()"
+        value="cambiar color borde"
+      />
+      <input
+        type="button"
+        onclick="cambiarColorTexto()"
+        value="cambiar color texto"
+      />
+    </div>
+    <hr />
+  </body>
+</html>

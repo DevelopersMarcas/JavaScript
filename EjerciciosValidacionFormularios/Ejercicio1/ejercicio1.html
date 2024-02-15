@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ejercicio1_validacion_form</title>
+    <link rel="stylesheet" href="ejercicio1.css" />
+    <script src="ejercicio1.js"></script>
+  </head>
+  <body>
+    <h1>Formulario de registro</h1>
+    <form name="form1" onsubmit="return validar();">
+      <div>
+        <label for="nombre">Nombre *</label>
+        <input type="text" name="nombre" id="nombre" />
+      </div>
+      <div>
+        <label for="apellido">Apellido *</label>
+        <input type="text" name="apellido" id="apellido" />
+      </div>
+      <div>
+        <label for="direccion">Direccion *</label>
+        <input type="text" name="direccion" id="direccion" />
+      </div>
+      <div>
+        <label for="edad">Edad *</label>
+        <input type="text" name="edad" id="edad" />
+      </div>
+      <div>
+        <label for="contrasena1">Contraseña: *</label>
+        <input type="password" name="contrasena1" id="contrasena1" />
+      </div>
+      <div>
+        <label for="contrasena2">Repite Contraseña: *</label>
+        <input type="password" name="contrasena2" id="contrasena2" />
+      </div>
+      <div>
+        <span id="errorPswd">Las contraseñas no coinciden</span>
+      </div>
+      <div>
+        <label for="estudios">Nivel de Estudios *</label>
+        <select id="estudios" name="estudios" />
+        <option value="">Selecciona</option>
+        <option>Ninguno</option>
+        <option>Primarios</option>
+        <option>Bachiller</option>
+        <option>Grado</option>
+        <option>Master</option>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" value="SI" id="acepto" />
+          He leido y acepto las condiciones.
+        </label>
+      </div>
+      <div>
+        <span id="error">Algunos campos no son correctos, revísalos</span>
+      </div>
+      <button>Registrarse</button>
+    </form>
+  </body>
+</html>

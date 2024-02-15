@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ejercicio3_validacion_form</title>
+    <link rel="stylesheet" href="ejercicio3.css" />
+    <script src="ejercicio3.js"></script>
+  </head>
+  <body>
+    <section>
+      <form name="form1" onsubmit="return validar();">
+        <h1>Solicitud de información</h1>
+        <div>
+          <label for="nombre">Nombre: </label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Escribe tu nombre"
+          />
+        </div>
+        <div id="errorNombre" style="display: none">
+          <span style="color: red">Campo vacio, se necesita algo</span>
+        </div>
+        <div>
+          <label for="email">Correo: </label>
+          <input
+            type="email"
+            pattern=".+@gmail\.com"
+            name="email"
+            id="email"
+            placeholder="Escribe tu email"
+            autocomplete="off"
+          />
+        </div>
+        <div>
+          <label for="asuntoSelect">Asunto</label>
+          <select
+            id="asuntoSelect"
+            name="asuntoSelect"
+            onchange="mostrarCampoOculto()"
+          >
+            <option id="opcion1" value="" disabled selected>Selecciona</option>
+            <option id="opcion2">Pedir información</option>
+            <option id="opcion3">Estado de una solicitud</option>
+            <option id="opcion4">Otros</option>
+          </select>
+        </div>
+        <div id="hidden">
+          <label for="numSolicitud">Nº Solicitud: </label>
+          <input
+            type="text"
+            name="numSolicitud"
+            id="numSolicitud"
+            placeholder="Escribe el número de solicitud"
+          />
+        </div>
+        <div>
+          <label for="mensaje">Escribe un mensaje: </label>
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            rows="10"
+            maxlength="300"
+          ></textarea>
+        </div>
+
+        <div><button>Enviar</button></div>
+      </form>
+    </section>
+  </body>
+</html>
